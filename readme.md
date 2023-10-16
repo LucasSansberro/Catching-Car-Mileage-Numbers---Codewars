@@ -24,21 +24,8 @@ The digits match one of the values in the awesomePhrases array
 
 So, you should expect these inputs and outputs:
 
-// "boring" numbers
-isInteresting(3, [1337, 256]); // 0
-isInteresting(3236, [1337, 256]); // 0
+![Example code image](example-code.jpg)
 
-// progress as we near an "interesting" number
-isInteresting(11207, []); // 0
-isInteresting(11208, []); // 0
-isInteresting(11209, []); // 1
-isInteresting(11210, []); // 1
-isInteresting(11211, []); // 2
-
-// nearing a provided "awesome phrase"
-isInteresting(1335, [1337, 256]); // 1
-isInteresting(1336, [1337, 256]); // 1
-isInteresting(1337, [1337, 256]); // 2
 Error Checking
 A number is only interesting if it is greater than 99!
 Input will always be an integer greater than 0, and less than 1,000,000,000.
